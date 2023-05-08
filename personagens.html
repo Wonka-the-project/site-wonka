@@ -6,13 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./vetores/w!.png" type="image/x-icon">
-    <link rel="stylesheet" href="wonka.css">
-    <script src="./wonka.js"></script>
+    <link rel="stylesheet" href="personagens.css">
+    <script src="./persoagens.js"></script>
     <title>Wonka!</title>
 </head>
+
 <body>
-    <!-- modal das informações do wonka -->
-    <div id="aparecer_willy"></div>
+    <!-- modal das informações augustus -->
+    <div id="aparecer_augustus"></div>
+
+    <!-- modal das informações violet -->
+    <div id="aparecer_violet"></div>
+
+    <!-- modal das informações veruca -->
+    <div id="aparecer_veruca"></div>
+
+    <!-- modal das informações mike -->
+    <div id="aparecer_mike"></div>
+
+    <!-- modal das informações  charlie -->
+    <div id="aparecer_charlie"></div>
 
     <!-- ticket do cadastro -->
     <div class="ticket_cadastro">
@@ -58,16 +71,41 @@
     </div>
     <!-- fim do header -->
 
-    <!-- seção willy wonka + jardim -->
+    <!-- começo augustus gloop -->
     <section>
-        <img src="./vetores/fundo_jardim.svg" width="100%" style="z-index: 1; position: absolute;">
-        <button onclick="mostrar_conteudo()" class="botao_willy">Willy Wonka</button>
-        <img src="./vetores/wonka_ilustracao.svg" class="wonka_ilustracao" width="350px">
+        <img src="./vetores/fundo augustus.svg" style="width: fit-content;" class="fundo_augustus">
+        <img src="./vetores/fundo montanhas.svg" width="102%" style="margin-top:90px; margin-left: -25px;">
+        <button class="botao_augustus">Augustus Gloop</button>
+        <img class="augustus_ilustracao" src="./vetores/augustus.svg" width="350px">
     </section>
-    <!-- seção willy wonka + jardim -->
 
-    <!-- começo modal curiosidades willy -->
-    
+    <!-- começo violet beauregarde -->
+    <section>
+        <img src="./vetores/fundo_violet.svg" width="100%">
+        <button class="botao_violet">Violet Beauregarde</button>
+        <img class="violet_ilustracao" src="./vetores/violet_ilustracao.svg" width="380px">
+    </section>
+
+    <!-- começo veruca salt -->
+    <section>
+        <img src="./vetores/fundo_veruca.svg" width="100%" style="margin-top: -5px;">
+        <button class="botao_veruca">Veruca Salt</button>
+        <img class="veruca_ilustracao" src="./vetores/ilustracao_veruca.svg" width="450px">
+    </section>
+
+    <!-- começo mike teevee -->
+    <section>
+        <img src="./vetores/fundo mike.svg" width="100%" style="margin-top: -5px;">
+        <button class="botao_mike">Mike Teevee</button>
+        <img class="mike_ilustracao" src="./vetores/mike_ilustracao.svg" width="400px">
+    </section>
+
+    <!-- começo charlie bucket -->
+    <section>
+        <img src="./vetores/fundo charlie.svg" width="100%" style="margin-top: -5px;">
+        <button class="botao_charlie">Charlie Bucket</button>
+        <img class="charlie_ilustracao" src="./vetores/ilustracao_charlie.svg" width="350px">
+    </section>
 
     <!-- começo do footer -->
     <footer>
@@ -96,5 +134,7 @@
         </div>
     </footer>
     <!-- fim do footer -->
+
 </body>
+
 </html>
