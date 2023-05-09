@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -10,7 +10,7 @@ body {
     padding: 0;
     background-color: #AD1D20;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .ticket_cadastro{
