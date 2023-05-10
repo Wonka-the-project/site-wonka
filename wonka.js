@@ -10,7 +10,7 @@ function mostrar_conteudo(){
                     <button onclick="fechar_modal()" class="botao_fechar">X</button>
                 </div>
                 <h1 style="font-weight: 900;">Willy Wonka</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis luctus orci, vitae elementum elit. Ut faucibus in neque a condimentum. Sed semper sapien eros, sit amet interdum dui pharetra vel. Proin malesuada eleifend rutrum. Aenean sodales, nunc sit amet venenatis vulputate, massa metus ullamcorper metus, eu hendrerit justo lorem ut libero. Proin sodales neque at sollicitudin sodales. Ut ullamcorper risus quis odio pharetra posuere. Vestibulum in velit pulvinar, maximus neque rutrum, mollis orci. Etiam vel elementum tortor, id interdum lacus. Ut tincidunt quis urna quis euismod. </p>
+                <p>Willy Wonka é criativo e perseverante na construção de sua fábrica de chocolate, usando ingredientes incomuns para criar sabores únicos. Ele testa os visitantes com jogos para encontrar um sucessor e enfrenta desafios como a concorrência e a busca por ingredientes raros. Willy nunca desiste e sempre encontra soluções criativas para superar os desafios. Ele é inspirador, encorajando a inovação e superação de desafios, e sua história é um clássico da literatura infantil amado por gerações.</p>
             </div>
         </div>
     </div>

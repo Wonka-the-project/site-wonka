@@ -10,7 +10,7 @@ function mostrar_conteudo(){
                     <button onclick="fechar_modal()" class="botao_fechar">X</button>
                 </div>
                 <h1 style="font-weight: 900;">Loompalândia</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis luctus orci, vitae elementum elit. Ut faucibus in neque a condimentum. Sed semper sapien eros, sit amet interdum dui pharetra vel. Proin malesuada eleifend rutrum. Aenean sodales, nunc sit amet venenatis vulputate, massa metus ullamcorper metus, eu hendrerit justo lorem ut libero. Proin sodales neque at sollicitudin sodales. Ut ullamcorper risus quis odio pharetra posuere. Vestibulum in velit pulvinar, maximus neque rutrum, mollis orci. Etiam vel elementum tortor, id interdum lacus. Ut tincidunt quis urna quis euismod. </p>
+                <p>Oompa-Loompas são uma raça de seres pequenos e trabalhadores que vieram de Loompalandia, um lugar remoto e desconhecido. Os Oompa-Loompas são conhecidos por seus cânticos engraçados e habilidades na fabricação de chocolate. Eles são leais a Willy Wonka e trabalham na fábrica de chocolate para ajudá-lo a criar seus doces. Oompa-Loompalandia é um lugar misterioso que Willy Wonka descreve como um lugar com rios de chocolate e árvores de bom-bom, lagartas verdes e abrigos nas árvores.</p>
             </div>
         </div>
     </div>
