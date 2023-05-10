@@ -10,136 +10,11 @@
     <script src="./cadastro.js"></script>
     <title>Wonka!</title>
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap');
-
-    html {
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-    }
-
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #FAF6F3;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-    }
-
-    .cadastro_container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .fundo {
-        width: 70%;
-        height: 500px;
-        background-color: #f3ede2;
-        border-radius: 40px;
-        margin: 70px;
-        display: flex;
-        justify-content: end;
-    }
-
-    .fundo_vermelho {
-        width: 40%;
-        height: 500px;
-        border-top-right-radius: 40px;
-        border-bottom-right-radius: 40px;
-        background-color: #AD1D20;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        gap: 20px;
-
-    }
-
-    .cadastro {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        gap: 30px;
-        width: 60%;
-    }
-
-    .tag_input {
-        width: 300px;
-        margin: 0 auto;
-        padding: 13px 20px;
-        border: none;
-        margin-bottom: 25px;
-        border-radius: 40px;
-        background-color: #e3d6cb9e;
-        color: #000000;
-    }
-
-    .tag_input::placeholder {
-        color: #57351D;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 13px;
-        text-align: start;
-
-    }
-
-    select {
-        width: 300px;
-        margin: 0 auto;
-        padding: 13px 20px;
-        border: none;
-        margin-bottom: 25px;
-        border-radius: 40px;
-        background-color: #e3d6cb9e;
-        color: #57351D;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 13px;
-        text-align: start;
-
-    }
-
-    #dtnasc{
-        width: 300px;
-        margin: 0 auto;
-        padding: 13px 20px;
-        border: none;
-        margin-bottom: 25px;
-        border-radius: 40px;
-        background-color: #e3d6cb9e;
-        color: #57351D;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 13px;
-        text-align: start;
-
-    }
-
-    select option {
-        color: #57351D;
-    }
-
-    .botao_login {
-        background-color: #57351D;
-        border-radius: 33px;
-        border: 0;
-        display: inline-block;
-        cursor: pointer;
-        color: #ffffff;
-        font-size: 15px;
-        font-weight: 700;
-        padding: 11px 30px;
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .credenciais{
-       text-align: start;
-       
-    }
-</style>
-
 <body>
+    <div id="div_alert"
+    style=" z-index: 99999; display: flex; align-items: center; justify-content: center;position: absolute; left: 38%;">
+</div>
+
     <section class="cadastro_container">
         <div class="fundo">
 
@@ -169,7 +44,7 @@
                     </select>
                     <select style="width: 45%;">
                         <option value = "" disabled selected >Ambiente Favorito</option>
-                        <option value="Cachoeira de Chocolate">Cachoeira de Chocolate</option>
+                        <option value="Cachoeira de Chocolate">Sala Principal</option>
                         <option value="Sala de Invenções">Sala de Invenções</option>
                         <option value="Sala de Nozes">Sala de Nozes</option>
                         <option value="Sala de TV">Sala de TV</option>
@@ -179,7 +54,7 @@
                     <input style="width: 40%;" type="password" class="tag_input" placeholder="Senha"><br>
 
                     <div style="width: 100%; display: flex;align-items: center;justify-content: center;">
-                        <button class=botao_login>Entrar</button>
+                        <button onclick="cadastrar()" class=botao_login>Entrar</button>
                     </div>
                 </div>
 
