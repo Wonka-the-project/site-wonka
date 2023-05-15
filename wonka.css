@@ -72,11 +72,24 @@ a:hover {
     transition: .3s;
 }
 
+.ticket_login:hover{
+        transform: scale(1.05);
+}
+
+.voltar_ao_topo:hover{
+    transform: scale(1.05);
+}
+
 .wonka_ilustracao {
     position: absolute;
     top: 57%;
     left: 37%;
     z-index: 999;
+    transition: .3s;
+}
+
+.wonka_ilustracao:hover{
+    transform: scale(1.05) translateY(-10px);
 }
 
 .botao_willy {
@@ -94,6 +107,18 @@ a:hover {
     padding: 20px 30px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+}
+
+.botao_willy:hover{
+    transform: scale(1.05);
+}
+
+.logo:hover{
+        transform: scale(1.05);
+}
+
+.ticket_cadastro:hover{
+        transform: scale(1.05);
 }
 
 .modal_willy{

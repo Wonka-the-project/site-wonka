@@ -13,6 +13,31 @@ body {
     font-weight: 700;
 }
 
+.voltar_ao_topo:hover{
+    transform: scale(1.05);
+}
+
+.ticket_login:hover{
+transform: scale(1.05);
+}
+
+.ticket_cadastro:hover{
+    transform: scale(1.05);
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+
+.botao:hover{
+    transform: scale(1.05);
+
+}
+
+.mapa:hover{
+    transform: scale(1.05);
+}
+
 .ticket_cadastro{
     position: fixed;
     position: fixed;

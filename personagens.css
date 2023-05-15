@@ -13,6 +13,23 @@ body {
     font-weight: 700;
 }
 
+.voltar_ao_topo:hover{
+    transform: scale(1.05);
+}
+
+.ticket_login:hover{
+transform: scale(1.05);
+}
+
+.ticket_cadastro:hover{
+    transform: scale(1.05);
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+
+
 .ticket_cadastro{
     position: fixed;
     position: fixed;
@@ -166,6 +183,45 @@ text-align: justify;
     font-family: 'Montserrat', sans-serif;
 }
 
+.augustus_ilustracao:hover{
+    transform: scale(1.05) translateY(-10px);
+}
+
+.botao_augustus:hover{
+    transform: scale(1.05);
+}
+
+.violet_ilustracao:hover{
+    transform: scale(1.05) translateY(-10px);
+}
+
+.botao_violet:hover{
+    transform: scale(1.05);
+}
+
+.veruca_ilustracao:hover{
+    transform: scale(1.05) translateY(-10px);
+}
+
+.botao_veruca:hover{
+    transform: scale(1.05);
+}
+
+.mike_ilustracao:hover{
+    transform: scale(1.05) translateY(-10px);
+}
+
+.botao_mike:hover{
+    transform: scale(1.05);
+}
+
+.charlie_ilustracao:hover{
+    transform: scale(1.05) translateY(-10px);
+}
+
+.botao_charlie:hover{
+    transform: scale(1.05);
+}
 .violet_ilustracao{
     position: absolute;
     z-index: 999;

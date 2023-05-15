@@ -13,6 +13,18 @@ body {
     font-weight: 700;
 }
 
+.logo:hover{
+    transform: scale(1.05);
+}
+
+.ticket_login:hover{
+    transform: scale(1.05);
+}
+
+.botao_login:hover{
+    transform: scale(1.05);
+}
+
 .cadastro_container {
     display: flex;
     align-items: center;
