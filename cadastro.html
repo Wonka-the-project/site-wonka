@@ -22,18 +22,19 @@
                 <div class="credenciais">
                     <h2 style="color: #57351D; text-align: center;">Cadastro</h2>
                     
-                    <input type="text" class="tag_input" placeholder="Nome" style="width: 40%;">
-                    <input type="text" class="tag_input" placeholder="Sobrenome" style="width: 40%;"><br>
+                <form>
+                    <input required id="inp_nome" type="text" class="tag_input" placeholder="Nome" style="width: 40%;">
+                    <input required id="inp_sobrenome" type="text" class="tag_input" placeholder="Sobrenome" style="width: 40%;"><br>
 
-                    <select style="width: 35%;">
+                    <select id="inp_sexo" required style="width: 35%;">
                         <option value = "" disabled selected >Sexo</option>
                         <option value="F">Feminino</option>
                         <option value="F">Masculino</option>
                         <option value="F">Outros</option>
                     </select>
-                    <input style="width: 35%;" type="date" id="dtnasc" placeholder="Data de Nascimento"><br>
+                    <input required style="width: 35%;" type="date" id="inp_dtnasc" placeholder="Data de Nascimento"><br>
 
-                    <select style="width: 49%;">
+                    <select required id="inp_personagem" style="width: 49%;">
                         <option value = "" disabled selected >Personagem Favorito</option>
                         <option value="Willy Wonka">Willy Wonka</option>
                         <option value="Augustus Gloop">Augustus Gloop</option>
@@ -42,26 +43,18 @@
                         <option value="Mike Teevee">Mike Teevee</option>
                         <option value="Charlie Bucket">Charlie Bucket</option>
                     </select>
-                    <select style="width: 45%;">
-                        <option value = "" disabled selected >Ambiente Favorito</option>
-                        <option value="Cachoeira de Chocolate">Sala Principal</option>
-                        <option value="Sala de Invenções">Sala de Invenções</option>
-                        <option value="Sala de Nozes">Sala de Nozes</option>
-                        <option value="Sala de TV">Sala de TV</option>
-                    </select><br>
 
-                    <input style="width: 70%;" type="email" class="tag_input" placeholder="E-mail"><br>
-                    <input style="width: 40%;" type="password" class="tag_input" placeholder="Senha">
-                    <input style="width: 40%;" type="password" class="tag_input" placeholder="Confirme sua Senha"><br>
+                    <input id="inp_email" required style="width: 70%;" type="email" class="tag_input" placeholder="E-mail"><br>
+                    <input id="inp_senha_nao" required style="width: 40%;" type="password" class="tag_input" placeholder="Senha">
+                    <input id="inp_senha" required style="width: 40%;" type="password" class="tag_input" placeholder="Confirme sua Senha"><br>
 
                     <div style="width: 100%; display: flex;align-items: center;justify-content: center;">
                         <button onclick="cadastrar()" class=botao_login>Cadastrar</button>
                     </div>
+                </form>
                 </div>
 
             </div>
-
-
 
             <div class="fundo_vermelho">
                 <a href="./wonka.html"><img  class="logo" src="./vetores/wonka logo.svg" width="250px"></a>
