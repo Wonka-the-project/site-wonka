@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./vetores/w!.png" type="image/x-icon">
-    <link rel="stylesheet" href="goldenticket.css">
-    <script src="./wonkabar.js"></script>
+    <link rel="shortcut icon" href="../vetores/w!.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/goldenticket.css">
+    <script src="../js/wonkabar.js"></script>
     <title>Wonka!</title>
 </head>
 <body onload="montar_barra()">
@@ -15,11 +15,11 @@
      <div class="header-container" id="header">
         <header class="cabeca">
             <div>
-                <img src="./vetores/chcolcate.svg" width="100%" class="chocolate_derretido">
+                <img src="../vetores/chcolcate.svg" width="100%" class="chocolate_derretido">
             </div>
 
             <div class="nav_bar">
-                <a href="#header"><img class="logo" src="./vetores/wonka logo.svg" width="140px"></a>
+                <a href="#header"><img class="logo" src="../vetores/wonka logo.svg" width="140px"></a>
 
                 <ul class="ul1">
                     <a href="./personagens.html">
@@ -36,7 +36,7 @@
                     </a>
                 </ul>
 
-                <a href="./login.html"><img src="./vetores/login.svg" width="120px" class="ticket_login"></a>
+                <a href="./login.html"><img src="../vetores/login.svg" width="120px" class="ticket_login"></a>
             </div>
         </header>
     </div>
@@ -44,7 +44,7 @@
 
     <section class="comer_barra_container">
         <div class="quantos_comer">
-            <img src="./vetores/logo wonkabar.svg" width="200px">
+            <img src="../vetores/logo wonkabar.svg" width="200px">
 
         <div>
             <span style="color: white;">Quantos pedaços</span>
@@ -93,17 +93,17 @@
 
 var src_imagem; 
 if (barra_de_chocolate.chocolate == "ao leite" && barra_de_chocolate.confeito == "sem") {
-    src_imagem = "./vetores/aoleite.svg";
+    src_imagem = "../vetores/aoleite.svg";
 } else if (barra_de_chocolate.chocolate == "branco" && barra_de_chocolate.confeito == "sem") {
-    src_imagem = "./vetores/branco.svg";
+    src_imagem = "../vetores/branco.svg";
 } else if (barra_de_chocolate.chocolate == "ao leite" && barra_de_chocolate.confeito == "granulado") {
-    src_imagem = "./vetores/aoleiteconfeito.svg";
+    src_imagem = "../vetores/aoleiteconfeito.svg";
 } else if (barra_de_chocolate.chocolate == "branco" && barra_de_chocolate.confeito == "granulado") {
-    src_imagem = "./vetores/brancoconfeito.svg";
+    src_imagem = "../vetores/brancoconfeito.svg";
 } else if (barra_de_chocolate.chocolate == "ao leite" && barra_de_chocolate.confeito == "coco") {
-    src_imagem = "./vetores/aoleitecoco.svg";
+    src_imagem = "../vetores/aoleitecoco.svg";
 } else if (barra_de_chocolate.chocolate == "branco" && barra_de_chocolate.confeito == "coco") {
-    src_imagem = "./vetores/brancococo.svg";
+    src_imagem = "../vetores/brancococo.svg";
 }
 
 
@@ -161,10 +161,10 @@ function ver_goldenticket(){
     var sorteado = parseInt((aleatorio * 10) + 1)
     if(sorteado == 2 || sorteado == 4 ||sorteado == 6 ||sorteado == 8 ||sorteado == 10){
         // div_1.innerHTML += `<span style="color: white; margin-top: -200px;">Parabéns! Você ganhou o Convite Dourado e mais 50 pontos.</span><br><br>`
-        div_1.innerHTML += `<img src="./vetores/golden_ticket.svg" style="margin-left: -80px" width="500px"><br><br><br>`
+        div_1.innerHTML += `<img src="../vetores/golden_ticket.svg" style="margin-left: -80px" width="500px"><br><br><br>`
     } else {
         // div_1.innerHTML += `<span style="margin-left: 70px; color: white;">Não foi dessa vez! Você ganhou 10 pontos.</span><br><br>`
-        div_1.innerHTML += `<img src="./vetores/aluminio.svg" style="margin-left: -80px" width="500px"><br><br><br>`
+        div_1.innerHTML += `<img src="../vetores/aluminio.svg" style="margin-left: -80px" width="500px"><br><br><br>`
     }
         div_1.innerHTML += `<button  style="margin-left: 70px; margin-top: 20px;" onclick="window.location.href = './wonkabar.html'" class="botao_comer">Tentar Denovo</button>`
 }
