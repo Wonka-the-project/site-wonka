@@ -11,8 +11,22 @@ body {
     background-color: #FAF6F3;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    scrollbar-width: thin;
 }
 
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 3px; 
+}
+  
+body::-webkit-scrollbar-track {
+    background: #67391d;
+    padding: 2px;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #c6ae5d;
+}
 .logo:hover{
     transform: scale(1.05);
 }
