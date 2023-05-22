@@ -23,6 +23,11 @@ body {
     margin-left: -10px;
 }
 
+.botao_comer:hover{
+    transform: scale(1.05);
+
+}
+
 .nav_bar {
     padding: 100px;
     display: flex;

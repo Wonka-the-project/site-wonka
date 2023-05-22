@@ -36,7 +36,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 80px;
+    gap: 50px;
     list-style: none;
     color: white;
     margin-left: -25px;
@@ -51,6 +51,27 @@ a {
 a:hover {
     color: #c6ae5dff;
     transition: .3s;
+}
+
+.ticket_login:hover{
+    transform: scale(1.05);
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+
+.wonkabar:hover{
+    transform: scale(1.05);
+}
+
+.nbrg:hover{
+    transform: scale(1.05);
+}
+
+.botao_montar:hover{
+    transform: scale(1.05);
+
 }
 
 .montarbarra_container{
