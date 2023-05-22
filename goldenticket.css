@@ -86,7 +86,7 @@ a:hover {
 .pedaco{
     display: flex; 
     justify-content: center; 
-    width: fit-content; 
+    flex-wrap: wrap;
     align-items: center;
     height: auto; 
     margin: 0 auto;
