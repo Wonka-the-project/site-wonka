@@ -55,7 +55,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 80px;
+    gap: 50px;
     list-style: none;
     color: white;
     margin-left: -25px;
@@ -70,6 +70,10 @@ a {
 a:hover {
     color: #c6ae5dff;
     transition: .3s;
+}
+
+.nbrg:hover{
+    transform: scale(1.05);
 }
 
 .ticket_login:hover{

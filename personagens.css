@@ -89,6 +89,10 @@ a:hover {
     transition: .3s;
 }
 
+.nbrg:hover{
+    transform: scale(1.05);
+}
+
 .modal_willy{
     background-color: #f3ecc86b;
     font-family: 'Montserrat', sans-serif;
