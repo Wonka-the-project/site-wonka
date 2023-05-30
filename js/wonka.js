@@ -1,3 +1,6 @@
+var botao_cadastrar = document.getElementById(cadastrar)
+localStorage.setItem('botao_cadastrar');
+
 function mostrar_conteudo(){
     aparecer_willy.innerHTML = `
 <div class="modal_willy">
@@ -21,3 +24,4 @@ function mostrar_conteudo(){
 function fechar_modal(){
     aparecer_willy.innerHTML = " ";
 }
+

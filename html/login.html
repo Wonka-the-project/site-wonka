@@ -25,21 +25,30 @@
                 <div style="margin-left: -90px;" class="credenciais">
                     <h2 style="color: #57351D;">Login</h2>
 
-                    <form>
+               
                     <div>
-                        <input required class="tag_input" type="email" placeholder="E-mail" style=" background-image: url(../vetores/email.png); background-size: 20px 20px; background-repeat: no-repeat; background-position: left center; background-position-x: 5px; padding-left: 30px;">
+                        <input id="inp_email" required class="tag_input" type="email" placeholder="E-mail" style=" background-image: url(../vetores/email.png); background-size: 20px 20px; background-repeat: no-repeat; background-position: left center; background-position-x: 5px; padding-left: 30px;">
                       </div>
                       <div>
-                        <input required class="tag_input" type="password" placeholder="Senha" style="background-image: url(../vetores/senha.png); background-size: 20px 20px; background-repeat: no-repeat; background-position: left center; background-position-x: 5px;padding-left: 30px;">
+                        <input id="inp_senha" required class="tag_input" type="password" placeholder="Senha" style="background-image: url(../vetores/senha.png); background-size: 20px 20px; background-repeat: no-repeat; background-position: left center; background-position-x: 5px;padding-left: 30px;">
                       </div>
 
-                      <button class="botao_login" >Entrar</button>
-                    </form>
+                      <button onclick="entrar()" class="botao_login" >Entrar</button>
+                    
                 </div>
 
             </div>
         </div>
     </section>
 </body>
-
 </html>
+<script>
+function entrar(){
+    var email = inp_email.value
+    var senha = inp_senha.value
+
+    if(email == "wonka@gmail.com" && senha == "26122002Tn"){
+        window.location.href = "./wonka.html"
+    }
+}
+</script>

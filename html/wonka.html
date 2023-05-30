@@ -10,13 +10,16 @@
     <script src="../js/wonka.js"></script>
     <title>Wonka!</title>
 </head>
+
 <body>
     <!-- modal das informações do wonka -->
     <div id="aparecer_willy"></div>
 
     <!-- ticket do cadastro -->
-    <a href="cadastro.html"><div class="ticket_cadastro">
-        <img src="../vetores/cadastrese.svg" width="140px"></a>
+    <a href="cadastro.html">
+        <div class="ticket_cadastro" id="cadastrar">
+            <img src="../vetores/cadastrese.svg" width="140px">
+    </a>
     </div>
 
     <!-- voltar ao topo -->
@@ -52,7 +55,22 @@
                     </a>
                 </ul>
 
-                <a href="./login.html"><img src="../vetores/login.svg" width="120px" class="ticket_login"></a>
+                <div id="div_logineusuario"
+                    style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-left: 30px;">
+                    <!-- <a href="./login.html"><img src="../vetores/login.svg" width="120px" class="ticket_login"></a> -->
+                    <div>
+                        <a href=""><img src="../vetores/usuario_foto.png" width="50px"></a>
+                    </div>
+                    <div>
+                        <div style="margin-top: 15px;">
+                        <span style="color: white;">Olá, <span>Thaisa</span></span>
+                    </div>
+                        <div style="display: flex; align-items: center; margin-top: -20px; gap: 5px;">
+                            <img src="../vetores/estrela.png" width="20px">
+                            <h4 style="color: white;"><span>150</span> Pontos</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
     </div>
@@ -67,14 +85,14 @@
     <!-- seção willy wonka + jardim -->
 
     <!-- começo modal curiosidades willy -->
-    
+
 
     <!-- começo do footer -->
     <footer>
         <img src="../vetores/chcolcate.svg" width="105%" style="margin-left: -25px;">
 
         <div class="footer_container">
-            <a class="nbrg" href=# ><img src="../vetores/nbrg.svg" width="250px"></a>
+            <a class="nbrg" href=#><img src="../vetores/nbrg.svg" width="250px"></a>
 
             <ul class="ul2">
                 <a class="a2" href="./personagens.html">
@@ -97,4 +115,5 @@
     </footer>
     <!-- fim do footer -->
 </body>
+
 </html>
