@@ -11,7 +11,7 @@ body {
     background-color: #AD1D20;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    scrollbar-width: thin;
+
 }
 
 body::-webkit-scrollbar {

@@ -107,8 +107,8 @@ if (barra_de_chocolate.chocolate == "ao leite" && barra_de_chocolate.confeito ==
 }
 
 
-var contador = 1; // Certifique-se de inicializar o contador antes do loop
-var div_1 = document.getElementById("div_1"); // Substitua "div_1" pelo ID correto da sua div
+var contador = 1; 
+
 
 div_1.style.maxWidth = ((barra_de_chocolate.pedaco / 2) * 70) + "px"
 
@@ -135,12 +135,7 @@ function comer() {
     
         while (contador_pedaco <= num_pedaco) {
             var pedaco_atual = div_pedacos.children[contador_pedaco - 1]
-
-            if(pedaco_atual.id == "o_br"){
-                contador_pedaco++
-            } else {
                 div_pedacos.removeChild(pedaco_atual)
-            }
             contador_pedaco++
             }
     
@@ -161,12 +156,12 @@ function ver_goldenticket(){
     var sorteado = parseInt((aleatorio * 10) + 1)
     if(sorteado == 2 || sorteado == 4 ||sorteado == 6 ||sorteado == 8 ||sorteado == 10){
         div_1.innerHTML += `<span style="color: white; margin-top: -200px;">Parabéns! Você ganhou o Convite Dourado e mais 50 pontos.</span><br><br>`
-        div_1.innerHTML += `<img src="../vetores/golden_ticket.svg" style="margin-left: -80px" width="500px"><br><br><br>`
+        div_1.innerHTML += `<img src="../vetores/golden_ticket.svg" style="margin-left: -120px" width="500px"><br><br><br>`
     } else {
         div_1.innerHTML += `<span style="margin-left: 70px; color: white;">Não foi dessa vez! Você ganhou 10 pontos.</span><br><br>`
-        div_1.innerHTML += `<img src="../vetores/aluminio.svg" style="margin-left: -80px" width="500px"><br><br><br>`
+        div_1.innerHTML += `<img src="../vetores/aluminio.svg" style="margin-left: -120px" width="500px"><br><br><br>`
     }
-        div_1.innerHTML += `<button  style="margin-left: 70px; margin-top: 20px;" onclick="window.location.href = './wonkabar.html'" class="botao_comer">Tentar Denovo</button>`
+        div_1.innerHTML += `<button  style="margin-left: 40px; margin-top: 20px;" onclick="window.location.href = './wonkabar.html'" class="botao_comer">Tentar Denovo</button>`
 }
 </script>
 
