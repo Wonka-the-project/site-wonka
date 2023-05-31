@@ -3,7 +3,7 @@ function mostrar_conteudo_principal(){
 <div class="modal_willy">
     <div class="fundo_modal_willy">
         <div class="conteudo_modal_willy"> 
-            <img src="./vetores/sala principal.png" width="270px" style="border-radius: 20px;">
+            <img src="../vetores/sala principal.png" width="270px" style="border-radius: 20px;">
 
             <div class="texto">
                 <div class="fechar">
@@ -23,7 +23,7 @@ function mostrar_conteudo_invencao(){
 <div class="modal_willy">
     <div class="fundo_modal_willy">
         <div class="conteudo_modal_willy"> 
-            <img src="./vetores/sala invencao.png" width="270px" style="border-radius: 20px;">
+            <img src="../vetores/sala invencao.png" width="270px" style="border-radius: 20px;">
 
             <div class="texto">
                 <div class="fechar">
@@ -43,7 +43,7 @@ function mostrar_conteudo_nozes(){
 <div class="modal_willy">
     <div class="fundo_modal_willy">
         <div class="conteudo_modal_willy"> 
-            <img src="./vetores/sala nozes.png" width="270px" style="border-radius: 20px;">
+            <img src="../vetores/sala nozes.png" width="270px" style="border-radius: 20px;">
 
             <div class="texto">
                 <div class="fechar">
@@ -63,7 +63,7 @@ function mostrar_conteudo_tv(){
 <div class="modal_willy">
     <div class="fundo_modal_willy">
         <div class="conteudo_modal_willy"> 
-            <img src="./vetores/sala tv.png" width="270px" style="border-radius: 20px;">
+            <img src="../vetores/sala tv.png" width="270px" style="border-radius: 20px;">
 
             <div class="texto">
                 <div class="fechar">

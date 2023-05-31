@@ -47,6 +47,35 @@ body::-webkit-scrollbar-thumb {
     z-index: 9999;
 }
 
+.musica{
+    position: fixed;
+    width: auto;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-top: 43%;
+    margin-left: 81%;
+    z-index: 9999;
+    width: 10%;
+}
+
+audio::-webkit-media-controls-timeline {
+    display: none;
+  }
+
+  audio::-webkit-media-controls-volume-slider {
+    display: none;
+  }
+  
+  audio::-webkit-media-controls-current-time-display,
+  audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+  }
+  
+  audio::-webkit-media-controls-panel {
+    background-color: #c5ac5a; /* Altere para a cor desejada */
+  }
+
 .chocolate_derretido {
     margin: 0;
     padding: 0;

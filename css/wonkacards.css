@@ -29,6 +29,15 @@
         background-color: #c6ae5d;
     }
 
+    .ticket_cadastro{
+        position: fixed;
+        position: fixed;
+        margin-top: 39%;
+        margin-left: 90%;
+        z-index: 99999;
+    }
+    
+
     .chocolate_derretido {
         margin: 0;
         padding: 0;

@@ -3,7 +3,7 @@ function mostrar_conteudo(){
 <div class="modal_willy">
     <div class="fundo_modal_willy">
         <div class="conteudo_modal_willy"> 
-            <img src="./vetores/loompa_foto.jpg" width="270px" style="border-radius: 20px;">
+            <img src="../vetores/loompa_foto.jpg" width="270px" style="border-radius: 20px;">
 
             <div class="texto">
                 <div class="fechar">

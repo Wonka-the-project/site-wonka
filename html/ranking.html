@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../vetores/w!.png" type="image/x-icon">
+    <script src="../js/wonka.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Wonka!</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap');
+
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #FAF6F3;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+
+    }
+
+    body::-webkit-scrollbar {
+        width: 8px;
+        height: 3px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: #67391d;
+        padding: 2px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: #c6ae5d;
+    }
+
+    .chocolate_derretido {
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 0;
+        width: 105vw;
+        height: 100%;
+        margin-left: -10px;
+    }
+
+    .nav_bar {
+        padding: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -21%;
+
+    }
+
+    .ul1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        list-style: none;
+        color: white;
+        margin-left: 20px;
+        width: 100%;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        transition: all 0.2s linear;
+    }
+
+    a:hover {
+        color: #c6ae5dff;
+        transition: .3s;
+    }
+
+    section {
+        width: 100%;
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container_ranking {
+        width: 90%;
+        height: 450px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .grafico {
+        width: 50%;
+        height: 450px;
+    }
+
+    .kpi {
+        width: 50%;
+        height: 450px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .primeira_linha {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+</style>
+
+<body>
+    <!-- começando o header -->
+    <div class="header-container" id="header">
+        <header class="cabeca">
+            <div>
+                <img src="../vetores/chcolcate.svg" width="100%" class="chocolate_derretido">
+            </div>
+
+            <div class="nav_bar">
+                <a href="#header"><img class="logo" src="../vetores/wonka logo.svg" width="140px"></a>
+
+                <ul class="ul1">
+                    <a href="./personagens.html">
+                        <li>Personagens</li>
+                    </a>
+                    <a href="./tour.html">
+                        <li>Tour pela Fábrica</li>
+                    </a>
+                    <a href="./loompalandia.html">
+                        <li>Loompalândia</li>
+                    </a>
+                    <a href="./wonkacards.html">
+                        <li>Wonka Cards</li>
+                    </a>
+                    <a href="wonkabar.html">
+                        <li>Wonka Bar</li>
+                    </a>
+                </ul>
+
+                <div id="div_logineusuario"
+                    style="width: 220px; display: flex; align-items: center; justify-content: center; gap: 10px; margin-left: 30px;">
+                    <a href="./login.html"><img src="../vetores/login.svg" width="120px" class="ticket_login"></a>
+                </div>
+        </header>
+    </div>
+    <!-- fim do header -->
+
+    <section>
+        <div class="container_ranking">
+
+            <div class="grafico">
+                <div style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 10px;">
+                    <img src="../vetores/estrela.png" width="50px">
+                    <h3 style="color: #67391d;">Pontos</h3>
+                </div><br>
+                <div style="width:100%; height: 300px; display: flex;align-items: center;justify-content: center;">
+                    <canvas id="myChart" style="position: relative; height: 60vh; width: 100vh;"></canvas>
+                </div>
+            </div>
+
+            <div class="kpi" style="margin-top: -60px;">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <h3 style="color:#67391d;">Personagens Favoritos</h3>
+                </div>
+
+                <div class="primeira_linha">
+                    <div
+                        style="width: 180px; height: 150px; background-color: #c6ae5d; border-radius: 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px;">
+                        <div style="text-align: start; margin-top: 15px;">
+                            <div><span style="color:#67391d; font-size: small;">Wonka</span></div>
+                            <div><span style="color:#67391d; font-size: x-large;"><span
+                                        style="font-weight: 900;">86</span></b> Votos</span></div>
+                        </div>
+                        <div>
+                            <img src="../vetores/wonka_ilustracao.svg" width="80px">
+                        </div>
+                    </div>
+
+                    <div
+                        style="width: 180px; height: 150px; background-color: #c6ae5d; border-radius: 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px;">
+                        <div style="text-align: start; margin-top: 15px;">
+                            <div><span style="color:#67391d; font-size: small;">Augustus</span></div>
+                            <div><span style="color:#67391d; font-size: x-large;"><span
+                                        style="font-weight: 900;">32</span></b> Votos</span></div>
+                        </div>
+                        <div>
+                            <img src="../vetores/augustus.svg" width="80px">
+                        </div>
+                    </div>
+
+                    <div
+                        style="width: 180px; height: 150px; background-color: #c6ae5d; border-radius: 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px;">
+                        <div style="text-align: start; margin-top: 15px;">
+                            <div><span style="color:#67391d; font-size: small;">Violet</span></div>
+                            <div><span style="color:#67391d; font-size: x-large;"><span
+                                        style="font-weight: 900;">44</span></b> Votos</span></div>
+                        </div>
+                        <div>
+                            <img src="../vetores/violet_ilustracao.svg" width="80px">
+                        </div>
+                    </div>
+                </div>
+                <div class="primeira_linha">
+                    <div
+                        style="width: 180px; height: 150px; background-color: #c6ae5d; border-radius: 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px;">
+                        <div style="text-align: start; margin-top: 15px;">
+                            <div><span style="color:#67391d; font-size: small;">Veruca</span></div>
+                            <div><span style="color:#67391d; font-size: x-large;"><span
+                                        style="font-weight: 900;">29</span></b> Votos</span></div>
+                        </div>
+                        <div>
+                            <img src="../vetores/ilustracao_veruca.svg" width="80px">
+                        </div>
+                    </div>
+
+                    <div
+                        style="width: 180px; height: 150px; background-color: #c6ae5d; border-radius: 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px;">
+                        <div style="text-align: start; margin-top: 15px;">
+                            <div><span style="color:#67391d; font-size: small;">Mike</span></div>
+                            <div><span style="color:#67391d; font-size: x-large;"><span
+                                        style="font-weight: 900;">18</span></b> Votos</span></div>
+                        </div>
+                        <div>
+                            <img src="../vetores/mike_ilustracao.svg" width="80px">
+                        </div>
+                    </div>
+
+                    <div
+                        style="width: 180px; height: 150px; background-color: #c6ae5d; border-radius: 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px;">
+                        <div style="text-align: start; margin-top: 15px;">
+                            <div><span style="color:#67391d; font-size: small;">Charlie</span></div>
+                            <div><span style="color:#67391d; font-size: x-large;"><span
+                                        style="font-weight: 900;">77</span></b> Votos</span></div>
+                        </div>
+                        <div>
+                            <img src="../vetores/ilustracao_charlie.svg" width="80px">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
+<script>
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Thaisa', 'Guilherme', 'Lorena', 'Lucas', 'Nayra'],
+            datasets: [{
+                label: 'Pontos',
+                data: [150, 120, 90, 45, 30, 20],
+                backgroundColor: '#c6ae5dff',
+                borderColor: '#ffffff',
+                borderWidth: 0,
+                borderRadius: 8,
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: {
+                        display: false,
+                    }
+                },
+                x: {
+                    grid: {
+                        display: false,
+                    }
+                }
+            }
+        }
+    });
+</script>

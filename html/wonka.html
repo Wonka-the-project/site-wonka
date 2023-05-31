@@ -11,9 +11,16 @@
     <title>Wonka!</title>
 </head>
 
-<body onload="usuariomudar()">
+<body>
     <!-- modal das informações do wonka -->
     <div id="aparecer_willy"></div>
+
+    <!-- musica -->
+    <div class="musica">
+        <audio class="control" controls>
+            <source src="../vetores/musica tema.mp3" type="audio/mp3">
+          </audio>
+    </div>
 
     <!-- ticket do cadastro -->
     <a href="cadastro.html">
@@ -79,7 +86,7 @@
         <img src="../vetores/chcolcate.svg" width="105%" style="margin-left: -25px;">
 
         <div class="footer_container">
-            <a class="nbrg" href=#><img src="../vetores/nbrg.svg" width="250px"></a>
+           <button onclick="nobrega()" style="cursor: pointer; background-color: transparent; border: none;"><img src="../vetores/nbrg.svg" width="250px"></button>
 
             <ul class="ul2">
                 <a class="a2" href="./personagens.html">

@@ -3,7 +3,7 @@ function mostrar_conteudo_augustus(){
 <div class="modal_willy">
     <div class="fundo_modal_willy">
         <div class="conteudo_modal_willy"> 
-            <img src="./vetores/foto augustus.png" width="270px" style="border-radius: 20px;">
+            <img src="../vetores/foto augustus.png" width="270px" style="border-radius: 20px;">
 
             <div class="texto">
                 <div class="fechar">
@@ -23,7 +23,7 @@ function mostrar_conteudo_violet(){
 <div class="modal_willy">
     <div class="fundo_modal_willy">
         <div class="conteudo_modal_willy"> 
-            <img src="./vetores/foto violet.png" width="270px" style="border-radius: 20px;">
+            <img src="../vetores/foto violet.png" width="270px" style="border-radius: 20px;">
 
             <div class="texto">
                 <div class="fechar">
@@ -43,7 +43,7 @@ function mostrar_conteudo_veruca(){
 <div class="modal_willy">
     <div class="fundo_modal_willy">
         <div class="conteudo_modal_willy"> 
-            <img src="./vetores/foto veruca.png" width="270px" style="border-radius: 20px;">
+            <img src="../vetores/foto veruca.png" width="270px" style="border-radius: 20px;">
 
             <div class="texto">
                 <div class="fechar">
@@ -63,7 +63,7 @@ function mostrar_conteudo_mike(){
 <div class="modal_willy">
     <div class="fundo_modal_willy">
         <div class="conteudo_modal_willy"> 
-            <img src="./vetores/foto mike.png" width="270px" style="border-radius: 20px;">
+            <img src="../vetores/foto mike.png" width="270px" style="border-radius: 20px;">
 
             <div class="texto">
                 <div class="fechar">
@@ -83,7 +83,7 @@ function mostrar_conteudo_charlie(){
 <div class="modal_willy">
     <div class="fundo_modal_willy">
         <div class="conteudo_modal_willy"> 
-            <img src="./vetores/foto charlie.png" width="270px" style="border-radius: 20px;">
+            <img src="../vetores/foto charlie.png" width="270px" style="border-radius: 20px;">
 
             <div class="texto">
                 <div class="fechar">
