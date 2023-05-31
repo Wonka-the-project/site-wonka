@@ -1,7 +1,28 @@
-var botao_cadastrar = document.getElementById(cadastrar)
-localStorage.setItem('botao_cadastrar');
+var email = localStorage.getItem('email')
 
-function mostrar_conteudo(){
+function usuariomudar() {
+    if (email == "wonka@gmail.com") {
+        div_logineusuario.innerHTML = `
+        <div>
+        <img src="../vetores/usuario_foto.png" width="40px">
+    </div>
+
+    <div style="margin-top: 15px;">
+        <span style="color: white;">Olá,<span>Thaisa</span></span>
+        <div style="display: flex; align-items: center; margin-top: -20px; gap: 5px; width: 120px;">
+            <img src="../vetores/estrela.png" width="20px">
+            <h4 style="color: white;"><span>150</span> Pontos</h4>
+        </div>
+    </div>
+
+    <div>
+        <button style="background-color: transparent; border: none; cursor: pointer;"><img src="../vetores/sair.png" width="20px"></button>
+    </div>
+        `
+    }
+}
+
+function mostrar_conteudo() {
     aparecer_willy.innerHTML = `
 <div class="modal_willy">
     <div class="fundo_modal_willy">
@@ -21,7 +42,7 @@ function mostrar_conteudo(){
 `
 }
 
-function fechar_modal(){
+function fechar_modal() {
     aparecer_willy.innerHTML = " ";
 }
 
