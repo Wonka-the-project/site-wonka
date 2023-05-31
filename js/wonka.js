@@ -16,10 +16,18 @@ function usuariomudar() {
     </div>
 
     <div>
-        <button style="background-color: transparent; border: none; cursor: pointer;"><img src="../vetores/sair.png" width="20px"></button>
+        <button onclick="loginmudar()" style="background-color: transparent; border: none; cursor: pointer;"><img src="../vetores/sair.png" width="20px"></button>
     </div>
         `
+    cadastrar.style.display = 'none'
     }
+}
+
+function loginmudar(){
+        div_logineusuario.innerHTML = `
+        <a href="./login.html"><img src="../vetores/login.svg" width="120px" class="ticket_login"></a>
+        `
+        cadastrar.style.display = 'block'
 }
 
 function mostrar_conteudo() {
@@ -27,7 +35,7 @@ function mostrar_conteudo() {
 <div class="modal_willy">
     <div class="fundo_modal_willy">
         <div class="conteudo_modal_willy"> 
-            <img src="./vetores/willy_wonka_foto.jpg" width="300px" style="border-radius: 20px;">
+            <img src="../vetores/willy_wonka_foto.jpg" width="300px" style="border-radius: 20px;">
 
             <div class="texto">
                 <div class="fechar">
