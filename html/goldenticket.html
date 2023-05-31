@@ -12,7 +12,7 @@
 <body onload="montar_barra()">
 
      <!-- começando o header -->
-     <div class="header-container" id="header">
+    <div class="header-container" id="header">
         <header class="cabeca">
             <div>
                 <img src="../vetores/chcolcate.svg" width="100%" class="chocolate_derretido">
@@ -31,13 +31,18 @@
                     <a href="./loompalandia.html">
                         <li>Loompalândia</li>
                     </a>
+                    <a href="./wonkacards.html">
+                        <li>Wonka Cards</li>
+                    </a>
                     <a href="wonkabar.html">
                         <li>Wonka Bar</li>
                     </a>
                 </ul>
 
-                <a href="./login.html"><img src="../vetores/login.svg" width="120px" class="ticket_login"></a>
-            </div>
+                <div id="div_logineusuario"
+                    style="width: 220px; display: flex; align-items: center; justify-content: center; gap: 10px; margin-left: 30px;">
+                    <a href="./login.html"><img src="../vetores/login.svg" width="120px" class="ticket_login"></a>
+                </div>
         </header>
     </div>
     <!-- fim do header -->
@@ -121,26 +126,30 @@ while (contador <= barra_de_chocolate.pedaco) {
 var contas = 0
 
 function comer() {
-    var num_pedaco = Number(inp_num_pedaco.value)
-    contas += num_pedaco
-    fazer_contas()
+    var num_pedaco = Number(inp_num_pedaco.value);
+    if (num_pedaco + contas > barra_de_chocolate.pedaco) {
+        alert('maior que a quantidade de pedaços');
+    } else {
+        contas += num_pedaco;
+        fazer_contas();
     
-    var div_pedacos = document.querySelector("#div_1")
+        var div_pedacos = document.querySelector("#div_1");
 
-    if(contas == barra_de_chocolate.pedaco){
-        ver_goldenticket()
-    } 
-    
-    var contador_pedaco = 1;
-    
-        while (contador_pedaco <= num_pedaco) {
-            var pedaco_atual = div_pedacos.children[contador_pedaco - 1]
-                div_pedacos.removeChild(pedaco_atual)
-            contador_pedaco++
+        if (contas == barra_de_chocolate.pedaco) {
+            ver_goldenticket();
+        } else{
+            var pedacos_restantes = div_pedacos.children.length;
+        if (pedacos_restantes >= num_pedaco) {
+            for (var i = 0; i < num_pedaco; i++) {
+                var pedaco_atual = div_pedacos.children[0];
+                pedaco_atual.remove();
             }
-    
+        } else {
             
-
+        }
+        }
+        
+    }
 }
 
 function fazer_contas(){
@@ -154,14 +163,16 @@ function ver_goldenticket(){
     var aleatorio = Math.random()
     div_1.innerHTML = ``
     var sorteado = parseInt((aleatorio * 10) + 1)
-    if(sorteado == 2 || sorteado == 4 ||sorteado == 6 ||sorteado == 8 ||sorteado == 10){
-        div_1.innerHTML += `<span style="color: white; margin-top: -200px;">Parabéns! Você ganhou o Convite Dourado e mais 50 pontos.</span><br><br>`
-        div_1.innerHTML += `<img src="../vetores/golden_ticket.svg" style="margin-left: -120px" width="500px"><br><br><br>`
+    if(sorteado % 2 == 0){
+        div_1.innerHTML += `<span style="color: white;margin-left: 35px">Você ganhou o Convite Dourado e mais 50 pontos.</span><br><br>`
+        div_1.innerHTML += `<img src="../vetores/golden_ticket.svg" width="500px"><br><br><br>`
     } else {
-        div_1.innerHTML += `<span style="margin-left: 70px; color: white;">Não foi dessa vez! Você ganhou 10 pontos.</span><br><br>`
-        div_1.innerHTML += `<img src="../vetores/aluminio.svg" style="margin-left: -120px" width="500px"><br><br><br>`
+        div_1.innerHTML += 
+        `<span style="color: white;margin-left: 170px">Não foi dessa vez!</span><br><br>`
+        div_1.innerHTML += `<img src="../vetores/aluminio.svg" width="500px"><br><br><br>`
     }
-        div_1.innerHTML += `<button  style="margin-left: 40px; margin-top: 20px;" onclick="window.location.href = './wonkabar.html'" class="botao_comer">Tentar Denovo</button>`
+        div_1.innerHTML += `<button onclick="window.location.href = './wonkabar.html'" class="botao_comer" style="margin-left: 160px;">Tentar Denovo</button>
+`
 }
 </script>
 

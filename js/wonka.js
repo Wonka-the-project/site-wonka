@@ -1,34 +1,34 @@
-var email = localStorage.getItem('email')
+// var email = localStorage.getItem('email')
 
-function usuariomudar() {
-    if (email == "wonka@gmail.com") {
-        div_logineusuario.innerHTML = `
-        <div>
-        <img src="../vetores/usuario_foto.png" width="40px">
-    </div>
+// function usuariomudar() {
+//     if (email == "wonka@gmail.com") {
+//         div_logineusuario.innerHTML = `
+//         <div>
+//         <img src="../vetores/usuario_foto.png" width="40px">
+//     </div>
 
-    <div style="margin-top: 15px;">
-        <span style="color: white;">Olá,<span>Thaisa</span></span>
-        <div style="display: flex; align-items: center; margin-top: -20px; gap: 5px; width: 120px;">
-            <img src="../vetores/estrela.png" width="20px">
-            <h4 style="color: white;"><span>150</span> Pontos</h4>
-        </div>
-    </div>
+//     <div style="margin-top: 15px;">
+//         <span style="color: white;">Olá,<span>Thaisa</span></span>
+//         <div style="display: flex; align-items: center; margin-top: -20px; gap: 5px; width: 120px;">
+//             <img src="../vetores/estrela.png" width="20px">
+//             <h4 style="color: white;"><span>150</span> Pontos</h4>
+//         </div>
+//     </div>
 
-    <div>
-        <button onclick="loginmudar()" style="background-color: transparent; border: none; cursor: pointer;"><img src="../vetores/sair.png" width="20px"></button>
-    </div>
-        `
-    cadastrar.style.display = 'none'
-    }
-}
+//     <div>
+//         <button onclick="loginmudar()" style="background-color: transparent; border: none; cursor: pointer;"><img src="../vetores/sair.png" width="20px"></button>
+//     </div>
+//         `
+//     cadastrar.style.display = 'none'
+//     }
+// }
 
-function loginmudar(){
-        div_logineusuario.innerHTML = `
-        <a href="./login.html"><img src="../vetores/login.svg" width="120px" class="ticket_login"></a>
-        `
-        cadastrar.style.display = 'block'
-}
+// function loginmudar(){
+//         div_logineusuario.innerHTML = `
+//         <a href="./login.html"><img src="../vetores/login.svg" width="120px" class="ticket_login"></a>
+//         `
+//         cadastrar.style.display = 'block'
+// }
 
 function mostrar_conteudo() {
     aparecer_willy.innerHTML = `
