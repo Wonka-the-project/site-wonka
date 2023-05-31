@@ -11,9 +11,9 @@
 </head>
 
 <body>
-     <!-- ticket do cadastro -->
+    <!-- ticket do cadastro -->
     <a href="./ranking.html">
-    <div class="ticket_cadastro" id="cadastrar">
+        <div class="ticket_cadastro" id="cadastrar">
             <img src="../vetores/ranking.png" width="70px">
     </a>
     </div>
@@ -53,17 +53,20 @@
     <!-- fim do header -->
     <section>
         <div id="container" class="container_cards">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div id="div_1" style="display: flex; flex-direction: row; gap: 10px; margin-bottom: 25px;">
 
-            <div id="div_1" style="display: flex; flex-direction: row; gap: 10px; margin-bottom: 25px;">
-                <div id="card1">
-                    <img src="../vetores/back card.png" width="210px">
+                    <div id="card1">
+                        <img src="../vetores/back card.png" width="210px">
+                    </div>
+                    <div id="card2">
+                        <img src="../vetores/back card.png" width="210px">
+                    </div>
+                    <div id="card3">
+                        <img src="../vetores/back card.png" width="210px">
+                    </div>
                 </div>
-                <div id="card2">
-                    <img src="../vetores/back card.png" width="210px">
-                </div>
-                <div id="card3">
-                    <img src="../vetores/back card.png" width="210px">
-                </div>
+
             </div>
 
             <div id="div_sorteio"
@@ -77,12 +80,12 @@
         </div>
     </section>
 
-     <!-- começo do footer -->
-     <footer>
+    <!-- começo do footer -->
+    <footer>
         <img src="../vetores/chcolcate.svg" width="105%" style="margin-left: -25px;">
 
         <div class="footer_container">
-            <a class="nbrg" href=# ><img src="../vetores/nbrg.svg" width="250px"></a>
+            <a class="nbrg" href=#><img src="../vetores/nbrg.svg" width="250px"></a>
 
             <ul class="ul2">
                 <a class="a2" href="./personagens.html">
@@ -121,14 +124,32 @@
 
     function wonkacards() {
 
-        var willy = `<img src="../vetores/willy_card.png" width= 210px>`
-        var augustus = `<img src="../vetores/augustus_card.png" width= 210px>`
-        var violet = `<img src="../vetores/violet_card.png" width= 210px>`
-        var veruca = `<img src="../vetores/veruca_card.png" width= 210px>`
-        var mike = `<img src="../vetores/mike_card.png" width= 210px>`
-        var charlie = `<img src="../vetores/charlie_card.png" width= 210px>`
-
-        var personagens = [willy, augustus, violet, veruca, mike, charlie]
+        var personagem =
+        [
+        willy = {
+        imagem: `<img src="../vetores/willy_card.png" width= 210px>`,
+        musica: `<source src="../vetores/musica tema wonka.mp3" type="audio/mp3">`
+        }, 
+        augustus = {
+        imagem: `<img src="../vetores/augustus_card.png" width= 210px>`,
+        musica: `<source src="../vetores/musica tema augustus.mp3" type="audio/mp3">`
+        },
+        violet = {
+        imagem: `<img src="../vetores/violet_card.png" width= 210px>`,
+        musica: `<source src="../vetores/musica tema violet.mp3" type="audio/mp3">`
+        },
+        veruca = {
+        imagem: `<img src="../vetores/veruca_card.png" width= 210px>`,
+        musica: `<source src="../vetores/musica tema veruca.mp3" type="audio/mp3">`
+        },
+        mike = {
+        imagem: `<img src="../vetores/mike_card.png" width= 210px>`,
+        musica: `<source src="../vetores/musica tema mike.mp3" type="audio/mp3">`
+        },
+        charlie = {
+        imagem: `<img src="../vetores/charlie_card.png" width= 210px>`,
+        musica: `<source src="../vetores/musica tema.mp3" type="audio/mp3">`
+        },]
 
         var aleatorio_personagem = parseInt(Math.random() * 6)
         var aleatorio_card = parseInt(Math.random() * 3 + 1)
@@ -139,29 +160,42 @@
             var pontos_card = "200 Pontos"
         } else if (aleatorio_personagem == 1) {
             var pontos_card = "20 Pontos"
-        } if(aleatorio_personagem == 2){
+        } if (aleatorio_personagem == 2) {
             var pontos_card = "30 Pontos"
-        } if(aleatorio_personagem == 3){
+        } if (aleatorio_personagem == 3) {
             var pontos_card = "15 Pontos"
-        }if(aleatorio_personagem == 4){
+        } if (aleatorio_personagem == 4) {
             var pontos_card = "25 Pontos"
-        }if(aleatorio_personagem == 5){
+        } if (aleatorio_personagem == 5) {
             var pontos_card = "100 Pontos"
         }
 
 
         container.innerHTML = `
-                <div id="card1">
-                    <img src="../vetores/back card.png" width="210px">
-                </div>
-                <div id="card2">
-                    <img src="../vetores/back card.png" width="210px">
-                </div>
-                <div id="card3">
-                    <img src="../vetores/back card.png" width="210px">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+                <div id="div_1" style="display: flex; flex-direction: row; gap: 10px; margin-bottom: 25px;">
+
+                    <div id="card1">
+                        <img src="../vetores/back card.png" width="210px">
+                    </div>
+                    <div id="card2">
+                        <img src="../vetores/back card.png" width="210px">
+                    </div>
+                    <div id="card3">
+                        <img src="../vetores/back card.png" width="210px">
+                    </div>
                 </div>
 
-                <div id="div_sorteio" style="display: flex; flex-direction: column; align-items: center; margin-top: -25px;">
+                    <div style="display: flex;">
+                        <div class="musica">
+                            <audio class="control" controls>
+                                ${personagem[aleatorio_personagem].musica}
+                            </audio>
+                        </div>
+                    </div>
+            </div>
+
+            <div id="div_sorteio" style="display: flex; flex-direction: column; align-items: center; margin-top: -25px;">
                 <img src="../vetores/wonka card logo.svg" width="300px">
                 <div style="display: flex; align-items: center; gap: 2px;">
                 <img src="../vetores/estrela.png" width="30px">
@@ -170,13 +204,13 @@
                 <button id="botao_sortear" class="botao_sortear" onclick= "redirecinar()">Voltar</button>
             </div>
             `
-        document.getElementById("card" + aleatorio_card).innerHTML = personagens[aleatorio_personagem];
+        document.getElementById("card" + aleatorio_card).innerHTML = personagem[aleatorio_personagem].imagem;
     }
 
-    function redirecinar(){
+    function redirecinar() {
         window.location.href = "./wonka.html";
     }
 
-    
+
 
 </script>
